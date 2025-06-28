@@ -28,7 +28,7 @@ export default function FORM() {
         e.preventDefault();
         try {
             setStatus('Sending...');
-            await axios.post('http://localhost:8000/user/sendmail', formData);
+            await axios.post('https://logodesignshowcasebackend-5.onrender.com/user/sendmail', formData);
             setStatus('Message sent successfully!');
             setFormData({
                 name: '',

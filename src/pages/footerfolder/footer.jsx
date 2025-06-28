@@ -8,7 +8,7 @@ export default function FOOTER() {
       useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await axios.post(`http://localhost:8000/user/getContactDetail`);
+            const response = await axios.post(`https://logodesignshowcasebackend-5.onrender.com/user/getContactDetail`);
             setData(response.data.contactDetail || []);
           } catch (error) {
             console.error("Error fetching contactDetail:", error);

@@ -7,7 +7,7 @@ export default function TEAM(){
 
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/viewTeam`);
+        const response = await axios.get(`https://logodesignshowcasebackend-5.onrender.com/viewTeam`);
         setData(response.data.team);
         window.scrollTo({ top: 0, behavior: "smooth" });
       } catch (error) {

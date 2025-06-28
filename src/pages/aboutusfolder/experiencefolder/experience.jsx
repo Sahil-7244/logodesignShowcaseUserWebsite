@@ -24,7 +24,7 @@ export default function EXPERIENCE() {
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/getexperience`);
+      const response = await axios.get(`https://logodesignshowcasebackend-5.onrender.com/getexperience`);
       setData(response.data.experience);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {

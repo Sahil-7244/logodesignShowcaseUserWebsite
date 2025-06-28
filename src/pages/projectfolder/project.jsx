@@ -20,8 +20,8 @@ export default function PROJECT(){
   const fetchData = async () => {
     try {
         const response = isactive === "all"
-            ? await axios.get(`http://localhost:8000/user/getproducts`)
-            : await axios.post(`http://localhost:8000/user/getProductByCategory`, { category: isactive });
+            ? await axios.get(`https://logodesignshowcasebackend-5.onrender.com/user/getproducts`)
+            : await axios.post(`https://logodesignshowcasebackend-5.onrender.com/user/getProductByCategory`, { category: isactive });
         setData(response.data.products);
     } catch (error) {
       setData([]);
