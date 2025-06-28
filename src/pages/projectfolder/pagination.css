@@ -1,0 +1,15 @@
+/* Custom Pagination Styles */
+.custom-pagination .ant-pagination-item-active {
+    background-color: #007bff; /* Change to the desired color */
+    color: white; /* White text for the active page */
+  }
+  
+  .custom-pagination .ant-pagination-item {
+    background-color: transparent; /* Make inactive pages transparent */
+    color: #000; /* Text color for inactive pages */
+  }
+  
+  .custom-pagination .ant-pagination-item:hover {
+    background-color: #f0f0f0; /* Light hover effect */
+  }
+  

@@ -1,0 +1,9 @@
+.form-input:focus + .form-label, 
+.textarea-lg:focus + .form-label {
+    opacity: 0; /* Make the label invisible */
+    transform: translateY(-10px); /* Optional: move the label slightly */
+}
+.form-input.has-value + .form-label {
+    opacity: 0; /* Make the label invisible */
+    transform: translateY(-10px); /* Optional: move the label slightly */
+}

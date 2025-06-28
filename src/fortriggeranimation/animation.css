@@ -1,0 +1,35 @@
+.fadeInUp {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeOutUp {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fadeInRight {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeOutRight {
+    opacity: 0;
+    transform: translate3d(40px, 0, 0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fadeInLeft {
+    opacity: 1;
+    transform: none;
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeOutLeft {
+    opacity: 0;
+    transform: translate3d(-40px, 0, 0);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }

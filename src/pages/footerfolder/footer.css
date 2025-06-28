@@ -1,0 +1,16 @@
+a{
+    color:#aaa;
+}
+
+a:hover{
+    color: #44e60b;
+}
+
+.linkedin {
+    color: #fff;  /* Default color */
+    text-decoration: none;
+  }
+  
+.linkedin:hover {
+color: #44e60b;  /* Hover color */
+}
