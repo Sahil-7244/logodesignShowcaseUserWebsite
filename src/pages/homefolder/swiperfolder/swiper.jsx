@@ -41,7 +41,7 @@ const [slides, setSlide] = useState([]);
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://logodesignshowcasebackend-5.onrender.com/user/getBanner`);
+      const response = await axios.get(`${process.env.REACT_APP_SITEURL}/user/getBanner`);
       setSlide(response.data.banners);
       window.scrollTo({ top: 0, behavior: "smooth" });
     } catch (error) {

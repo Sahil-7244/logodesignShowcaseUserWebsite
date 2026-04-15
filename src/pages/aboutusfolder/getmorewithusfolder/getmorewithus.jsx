@@ -12,7 +12,7 @@ export default function GETMOREWITHUS(){
 
   const fetchData = async () => {
     try {
-      const response = await axios.get(`https://logodesignshowcasebackend-5.onrender.com/viewCarouselImg`);
+      const response = await axios.get(`${process.env.REACT_APP_SITEURL}/viewCarouselImg`);
       setdata(response.data.carouselImg);
     } catch (error) {
       setdata([]);

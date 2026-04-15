@@ -39,7 +39,7 @@ export function SERVICE(){
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.post(`https://logodesignshowcasebackend-5.onrender.com/viewServiceImg`);
+        const response = await axios.post(`${process.env.REACT_APP_SITEURL}/viewServiceImg`);
         setData(response.data.serviceImg || []);
       } catch (error) {
         console.error("Error fetching service images:", error);
@@ -179,7 +179,7 @@ export function CTA() {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.post(`https://logodesignshowcasebackend-5.onrender.com/viewServicebgImg`);
+          const response = await axios.post(`${process.env.REACT_APP_SITEURL}/viewServicebgImg`);
           setData(response.data.servicebgImg || []);
         } catch (error) {
           console.error("Error fetching service bg images:", error);
