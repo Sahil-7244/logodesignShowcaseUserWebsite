@@ -81,7 +81,7 @@ export default function PROJECT(){
                 <FadeInRight classname="col-sm-6 col-lg-4 col-xxl-3 isotope-item wow fadeInRight">
                         {/* Thumbnail Classic*/}
                         <article className="thumbnail thumbnail-classic thumbnail-md">
-                        <div className="thumbnail-classic-figure"><img src={`${item.productImage}`} alt={item.productImage} style={{width:'420px',height:'350px',objectFit:'cover'}} width={420} height={350} />
+                        <div className="thumbnail-classic-figure"><img src={`${item.productImage}`} alt={item.productImage} style={{width:'420px',height:'350px',objectFit:'cover', backgroundColor: "var(--imageBg)"}} width={420} height={350} />
                         </div>
                         <div className="thumbnail-classic-caption">
                             <div className="thumbnail-classic-title-wrap">

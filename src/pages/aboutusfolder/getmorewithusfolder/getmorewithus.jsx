@@ -80,7 +80,7 @@ export default function GETMOREWITHUS(){
                         {data.map((item,index)=>{
                             return(
                                 <a className="box-device" href="#">
-                                    <img src={`${item.carouselImage}`} alt={item.carouselImage} style={{height:'470px',width:'290px',objectFit:'cover'}} width={313} height={580} />
+                                    <img src={`${item.carouselImage}`} alt={item.carouselImage} style={{height:'470px',width:'290px',objectFit:'cover', backgroundColor: "var(--imageBg)"}} width={313} height={580} />
                                 </a>
                             );
                         })}

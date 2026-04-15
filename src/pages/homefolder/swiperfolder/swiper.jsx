@@ -73,6 +73,7 @@ const [slides, setSlide] = useState([]);
                 backgroundImage: `url(${slide.bannerImg})`,
                 backgroundSize: "cover",
                 height: "100vh",
+                backgroundColor: "var(--imageBg)", // Add a semi-transparent black overlay
               }}
             >
               <div className="swiper-slide-caption section-md">

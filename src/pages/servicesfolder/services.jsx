@@ -58,7 +58,7 @@ export function SERVICE(){
               <img
                 src={`${data[0].serviceImage}`}
                 alt="service img"
-                style={{ width: "415px", height: "592px", objectFit: "cover" }}
+                style={{ width: "415px", height: "592px", objectFit: "cover", backgroundColor: "var(--imageBg)" }}
                 width={415}
                 height={592}
               />
@@ -250,7 +250,8 @@ export function CTA() {
                 display: "block",
                 height:'550px',width:'1770px',
                 transform: `translate3d(-50%, ${scrollTransform}px, 0px)`,
-                objectFit:'cover'
+                objectFit:'cover',
+                backgroundColor: "var(--imageBg)"
               }}
             />
           ) : (
@@ -260,7 +261,7 @@ export function CTA() {
               style={{
                 display: "block",
                 transform: `translate3d(-50%, ${scrollTransform}px, 0px)`,
-             
+             backgroundColor: "var(--imageBg)"
               }}
             /> // Fallback if image not available
           )}

@@ -135,7 +135,7 @@ export default function EXPERIENCE() {
               <img
                     src="sung-jin-woo.png"
                     alt='clients'
-                    style={{width:'100%',height:'auto',objectFit:'contain'}}
+                    style={{width:'100%',height:'auto',objectFit:'contain', backgroundColor: "var(--imageBg)"}}
                   />{/* <a className="clients-classic" href="#">
                   <img
                     src="images/clients-9-270x117.png"
