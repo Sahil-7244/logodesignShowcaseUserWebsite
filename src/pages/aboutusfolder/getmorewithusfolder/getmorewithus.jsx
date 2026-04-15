@@ -14,7 +14,6 @@ export default function GETMOREWITHUS(){
     try {
       const response = await axios.get(`${process.env.REACT_APP_SITEURL}/viewCarouselImg`);
       setdata(response.data.carouselImg);
-      console.log(response.data.carouselImg);
     } catch (error) {
       setdata([]);
       console.log(error);
@@ -66,8 +65,8 @@ export default function GETMOREWITHUS(){
                     </div>
                     </div>
                 </FadeInLeft>
-                <FadeInUp classname="col-lg-6 text-center wow fadeInUp" data-wow-delay=".1s">
-                    <OwlCarousel
+                <FadeInUp classname="col-lg-6 text-center wow fadeInUp" data-wow-delay="0.1s">
+                    {data.length > 0 &&<OwlCarousel
                                 className="owl-carousel owl-style-1 owl-loaded owl-drag"
                                 items= {2}              // Number of items to display
                                 stagePadding= {0}      // Padding between items
@@ -85,7 +84,7 @@ export default function GETMOREWITHUS(){
                                 </a>
                             );
                         })}
-                    </OwlCarousel>
+                    </OwlCarousel>}
                 </FadeInUp>
                 </div>
             </div>
