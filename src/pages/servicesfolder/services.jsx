@@ -55,6 +55,7 @@ export function SERVICE(){
             <div className="container">
                 <div className="row row-30 justify-content-center">
                 <FadeInUp classname="col-md-7 col-lg-5 col-xl-6 text-lg-left wow fadeInUp">
+                  {data.length > 0 && data[0].serviceImage ? (
               <img
                 src={`${data[0].serviceImage}`}
                 alt="service img"
@@ -62,6 +63,9 @@ export function SERVICE(){
                 width={415}
                 height={592}
               />
+            ) : (
+              <div style={{ backgroundColor: "var(--imageBg)", width: "415px", height: "592px" }}>Image not available</div> // Fallback if image not available
+            )}
                 </FadeInUp>
                 <div className="col-lg-7 col-xl-6">
                     <div className="row row-30">
