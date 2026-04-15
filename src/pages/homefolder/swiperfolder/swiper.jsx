@@ -63,7 +63,7 @@ const [slides, setSlide] = useState([]);
           loop={true}
           autoplay={{ delay: 4859 }}
           ref={swiperRef}
-          style={{ width: "100%", height: "100vh" }}
+          style={{ width: "100%", height: "100vh", backgroundColor: "var(--imageBg)" }}
           className="swiper-wrapper text-center"
         >
           {slides.map((slide, index) => (

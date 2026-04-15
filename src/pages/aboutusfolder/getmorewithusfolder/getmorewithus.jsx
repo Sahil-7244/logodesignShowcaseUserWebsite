@@ -14,6 +14,7 @@ export default function GETMOREWITHUS(){
     try {
       const response = await axios.get(`${process.env.REACT_APP_SITEURL}/viewCarouselImg`);
       setdata(response.data.carouselImg);
+      console.log(response.data.carouselImg);
     } catch (error) {
       setdata([]);
       console.log(error);
